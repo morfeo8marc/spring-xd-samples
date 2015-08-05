@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.springframework.xd.samples</groupId>
+        <artifactId>sample-modules-parent</artifactId>
+        <version>1.0.0.BUILD-SNAPSHOT</version>
+        <relativePath>../sample-modules-parent</relativePath>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>spark-streaming-wordcount-java-processor</artifactId>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.10</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming_2.10</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.xd</groupId>
+            <artifactId>spring-xd-spark-streaming</artifactId>
+            <version>1.2.0.RELEASE</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>spring-io-release</id>
+            <url>http://repo.spring.io/release</url>
+        </repository>
+        <repository>
+            <id>spring-io-snapshot</id>
+            <url>https://repo.spring.io/libs-snapshot</url>
+        </repository>
+        <repository>
+            <id>paho-releases</id>
+            <url>https://repo.eclipse.org/content/repositories/paho-releases</url>
+        </repository>
+    </repositories>
+
+</project>

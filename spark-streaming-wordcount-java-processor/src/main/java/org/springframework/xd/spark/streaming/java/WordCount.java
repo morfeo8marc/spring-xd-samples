@@ -47,7 +47,7 @@ public class WordCount implements Processor<JavaDStream<String>, JavaPairDStream
 		Properties props = new Properties();
 		// Any specific Spark configuration properties would go here.
 		// These properties always get the highest precedence
-		//props.setProperty(SPARK_MASTER_URL_PROP, "local[4]");
+		props.setProperty(SPARK_MASTER_URL_PROP, "local[4]");
 		return props;
 	}
 }

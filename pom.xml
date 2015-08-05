@@ -15,6 +15,7 @@
 		<module>groovy-script-sink</module>
 		<module>payload-conversion</module>
 		<module>payload-value-counter</module>
+		<module>spark-streaming-wordcount-java-processor</module>
 		<!-- <module>reactor-moving-average</module> -->
 		<!-- <module>reactor-top-tags</module> -->
 		<module>redis-store-sink</module>
